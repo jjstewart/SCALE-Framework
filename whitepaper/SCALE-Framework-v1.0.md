@@ -1,8 +1,15 @@
-# SCALE Framework v1.0  
+# SCALE Framework™ v1.0  
 ### A Practical, Scalable Model for Security Reasoning and Technical Decision-Making  
-Author: John Strong  
-Version: 1.0  
-Status: Public Release
+
+**Author:** John Stewart  
+**Version:** 1.0  
+**Status:** Public Release  
+
+**Trademark Claimed – John Stewart**  
+**© 2025 John Stewart – All Rights Reserved**  
+**Licensed under CC BY-ND 4.0**
+
+
 
 ---
 
