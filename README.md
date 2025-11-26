@@ -1,10 +1,5 @@
-# SCALE-Framework
-Official public reference for the SCALE Security Reasoning Framework (v1.0).
-# SCALE Framework v1.0  
-### A Practical, Scalable Mental Model for Security Decision-Making  
-**Author:** John Stewart  
-**Status:** Public Release  
-**License:** CC BY-ND 4.0 (No Derivatives)
+# SCALE Framework (v1.0)
+Official public reference for the SCALE Security Reasoning Framework.
 
 ---
 
@@ -14,7 +9,7 @@ Official public reference for the SCALE Security Reasoning Framework (v1.0).
 
 The **SCALE Framework** is a five-step security reasoning model designed to help engineers, architects, and security leaders think clearly and systematically under pressure.
 
-SCALE provides a lightweight but comprehensive structure for making real-time decisions across:
+It provides a lightweight but comprehensive structure for making real-time decisions across:
 
 - Application Security  
 - Cloud Security  
@@ -22,14 +17,12 @@ SCALE provides a lightweight but comprehensive structure for making real-time de
 - Secure SDLC  
 - Architecture Reviews  
 - Threat Modeling  
-- Incident Response  
 - DevSecOps / Platform Security  
 - Supply Chain & Dependency Risk  
+- Incident Response  
 
-It exists to solve a persistent industry problem:  
-**complex security decisions must often be made quickly, with incomplete information, while memory recall collapses under cognitive load.**
-
-SCALE gives practitioners a reliable mental anchor to prevent “blank-out moments” and produce clear, defensible reasoning in any environment — including technical interviews.
+SCALE exists to solve a persistent industry problem:  
+**complex security decisions must often be made quickly, with incomplete information, while cognitive load disrupts memory recall.**
 
 ---
 
@@ -44,19 +37,20 @@ Identify architectural patterns, trust boundaries, data classifications, regulat
 ### **A → Attack & Threat Scenarios**  
 Enumerate realistic things that can go wrong: misconfigurations, exploits, supply chain issues, data exposure, insider misuse, and pipeline compromise.
 
-### **L → Leverage Known Patterns & Controls**  
+### **L → Leverage Patterns & Controls**  
 Map threats to proven mitigations using established security patterns, automation, tooling, guardrails, and secure-by-default templates.
 
 ### **E → Enablement & Scale-Friendly Implementation**  
-Ensure the solution is developer-friendly, friction-minimized, automatable, self-service, and sustainable across teams.
+Ensure the solution is developer-friendly, automatable, self-service, low-friction, and sustainable across teams.
 
 ---
 
 ## 📄 Full Whitepaper (v1.0)
 
-**PDF:** *(Add the link to your uploaded PDF here once committed.)*
+**PDF:**  
+[SCALE Framework v1.0 Whitepaper](whitepaper/SCALE-Framework-v1.0.pdf)
 
-This whitepaper defines the full methodology, rationale, and application examples.
+The whitepaper defines the complete methodology, rationale, examples, and usage guidance.
 
 ---
 
@@ -64,14 +58,14 @@ This whitepaper defines the full methodology, rationale, and application example
 
 SCALE is designed to be:
 
-- **Cognitively lightweight** — only 5 steps, always applicable  
-- **Universally adaptable** — works for code, cloud, data, pipelines, infra  
-- **Pressure-resistant** — built for real-time reasoning when memory fails  
-- **Engineer-friendly** — aligns with practical, scalable solutions  
-- **Easy to teach** — usable within minutes; masterable within a week  
+- **Cognitively lightweight** — only 5 steps  
+- **Universally adaptable** — works for code, cloud, infra, data flows, and pipelines  
+- **Pressure-resistant** — reliable under ambiguity and time pressure  
+- **Engineer-friendly** — prioritizes automation, guardrails, and enablement  
+- **Easy to adopt** — teachable in minutes, masterable with practice  
 
-SCALE is not a replacement for NIST, STRIDE, PASTA, or OCTAVE;  
-it operates **above them**, providing an overarching reasoning structure.
+SCALE is not a replacement for NIST, STRIDE, PASTA, or OWASP ASVS.  
+It operates **above them**, providing the overarching reasoning structure.
 
 ---
 
@@ -81,80 +75,80 @@ it operates **above them**, providing an overarching reasoning structure.
 - Threat modeling sessions  
 - Cloud design discussions  
 - CI/CD and platform security reviews  
-- Interview problem-solving  
 - Rapid risk assessments  
+- Interview problem-solving  
 - Third-party integration evaluations  
-- Emergency response / incident calls  
+- Incident response and emergency calls  
 
-Any time you face an ambiguous security question, SCALE applies.
+Any time an ambiguous or high-impact security decision must be made quickly, SCALE applies.
 
 ---
 
-## 🛠 Example Application
+## 🛠 Example Application (Microservice)
 
-**Scenario:** Reviewing a new microservice that updates user profiles.
+**S → Scope:**  
+REST microservice → updates user profile → writes to central user database.
 
-**S – Scope:**  
-REST microservice → updates user profile → writes to central user DB.
+**C → Context:**  
+Runs in Kubernetes; shared secrets; shared base image; no schema validation.
 
-**C – Context:**  
-Runs in Kubernetes, shared secrets, shared base image, no schema validation.
+**A → Threats:**  
+Schema injection, token misuse, secrets leakage, container escape, privilege escalation.
 
-**A – Attacks:**  
-Schema injection, token misuse, container escape from unpatched base image, secrets leakage, privilege escalation.
-
-**L – Controls:**  
+**L → Controls:**  
 Schema validation, OPA/API gateway policy checks, hardened base image, automated scanning, per-service secrets, RBAC.
 
-**E – Enablement:**  
-Add validation library to templates, automate scanning, provide self-service secrets onboarding, standardized hardened base image.
+**E → Enablement:**  
+Add validation library to templates; automate scanning; self-service secrets onboarding; standardized hardened base image.
+
+More examples can be found in the `/examples` directory.
 
 ---
 
-## 📚 Future Extensions (Planned)
+## 📚 Future Extensions
 
-- Official diagrams and visual models  
-- Architecture review checklists  
-- Training curriculum and workshops  
+- Additional official diagrams  
+- Architecture/security review checklists  
+- Training curriculum and workshop material  
 - Companion book  
-- SCALE v2.0 with expanded patterns  
+- SCALE v2.0 with expanded patterns and examples  
 - Potential certification pathway  
 
 ---
 
 ## 📜 License
 
-This framework is licensed under the  
-**Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)**.
+This framework is released under:  
+**Creative Commons Attribution–NoDerivatives 4.0 (CC BY-ND 4.0)**
 
-This means:
+You may:
+- Share the framework  
+- Reference it  
+- Teach it  
 
-- You **may share** the framework non-commercially  
-- You **must credit the author**  
-- You **may NOT modify** the framework  
-- You **may NOT commercialize** it  
-- You may NOT create derivative frameworks  
+You may *not*:
+- Modify it  
+- Commercialize derivative versions  
+- Publish altered variants  
 
-This protects the integrity of SCALE while allowing industry adoption.
-
-**Full license text:** See `LICENSE.txt` in this repository.
+See `LICENSE.txt` for full license terms.
 
 ---
 
 ## 🏷 Trademark Notice
 
-The SCALE Framework name and branding may be trademarked in future versions.  
-This repository constitutes the official public reference for version 1.0.
+The SCALE Framework name and associated branding may be trademarked in future versions.  
+This repository constitutes the official public reference for v1.0.
 
 ---
 
 ## 👤 About the Author
 
-**John Stewart** is an application and cloud security architect with over 20 years of experience designing, building, and leading secure software programs across enterprises and critical infrastructure organizations. He specializes in pragmatic, scalable AppSec strategy, secure SDLC design, developer enablement, and cloud security architecture.
+**John Stewart** is an application and cloud security architect with over two decades of experience designing and leading secure software programs across enterprise and critical-infrastructure environments. His work focuses on practical, scalable AppSec strategy, secure SDLC design, developer enablement, cloud architecture, and security automation.
 
 ---
 
 ## ⭐ Support the Framework
 
-If you find SCALE useful, please star the repository and share it with peers.  
+If SCALE is useful to you or your organization, please star the repository and share it with peers.  
 Your support helps establish SCALE as a recognized industry standard.
