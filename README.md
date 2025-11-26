@@ -1,5 +1,8 @@
-# SCALE Framework (v1.0)
+# SCALE Framework™ v1.0
 Official public reference for the SCALE Security Reasoning Framework.
+SCALE Framework™ is the claimed trademark of John Stewart. 
+Unauthorized use of the SCALE name for competing frameworks, derivatives, or commercial offerings is prohibited.
+
 
 ---
 
