@@ -155,5 +155,5 @@ Ensure solutions are adoptable and automatable.
 ---
 
 # Conclusion
-This example shows how developers can apply the **S.C.A.L.E framework** to practical microservice design and deployment. By following the five steps—Scope, Context, Attack Scenarios, Leverage Controls, and Enablement—teams can reason about risk, choose the correct guardrails, and scale security patterns across the engineering organization without adding unnecessary friction.
+This example shows how developers can apply the **S.C.A.L.E framework** to practical microservice design and deployment. By following the five steps, Scope, Context, Attack Scenarios, Leverage Controls, and Enablement teams can reason about risk, choose the correct guardrails, and scale security patterns across the engineering organization without adding unnecessary friction.
 
