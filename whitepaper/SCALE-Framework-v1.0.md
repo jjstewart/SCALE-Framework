@@ -33,6 +33,8 @@ Apply established security patterns: guardrails, automation, policy-as-code, sec
 **E — Enablement & Scale-Friendly Implementation**  
 Ensure the solution is realistic, automatable, low-friction, and adoptable across teams.
 
+![SCALE Framework Diagram](whitepaper/scale-diagram-v1.png)
+
 ---
 
 # 3. Detailed Framework Definition
