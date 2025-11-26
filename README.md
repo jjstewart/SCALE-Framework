@@ -10,6 +10,8 @@ Official public reference for the SCALE Security Reasoning Framework (v1.0).
 
 ## 📘 Overview
 
+![SCALE Framework Diagram](whitepaper/scale-diagram-v1.png)
+
 The **SCALE Framework** is a five-step security reasoning model designed to help engineers, architects, and security leaders think clearly and systematically under pressure.
 
 SCALE provides a lightweight but comprehensive structure for making real-time decisions across:
